@@ -1,0 +1,71 @@
+@tailwind base;
+
+h1 {
+  @apply text-2xl;
+}
+h2 {
+  @apply text-xl;
+}
+h3 {
+  @apply text-lg;
+}
+a {
+  @apply text-blue-600 underline;
+}
+
+@tailwind components;
+
+@tailwind utilities;
+
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+a.nav-link{
+  color: white;
+}
+
+.accordion-content {
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.5s ease;
+}
+
+.content-open {
+    max-height: 300px;
+}
+
+code {
+  color: #E01A76;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+h1{
+  color: red;
+}
+
+.color-red{
+  color: red;
+}
+
+.bordered{
+  border: 1px solid red;
+}
+
+.btn-blue {
+  @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+}
+
+.btn-blue:hover {
+  @apply bg-blue-700;
+}
